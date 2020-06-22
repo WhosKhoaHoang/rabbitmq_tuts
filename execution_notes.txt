@@ -1,0 +1,22 @@
+. Need to have RabbitMQ running
+
+
+
+. Need to set dependencies in File > Project Structure > Modules in left pane > Dependencies tab. From there, select the jar files in _jars
+
+
+
+. In order to use the language features suggested by the online tutorial, you need to set the project's language level to > 5 by going to File > Project Structure > Modules in left pane > Sources tab
+
+
+
+. If you get compiler errors, consider these steps:
+
+(from https://stackoverflow.com/questions/42966889/)
+
+1. Go to Preferences
+2. Build, Execution, Deployment -> Compiler -> Java Compiler
+3. choose your java version from Project bytecode version
+4. Uncheck Use compiler from module target JDK when possible
+   click apply and ok.
+
