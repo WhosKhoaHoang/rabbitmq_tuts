@@ -18,7 +18,7 @@
 2. Build, Execution, Deployment -> Compiler -> Java Compiler
 3. choose your java version from Project bytecode version
 4. Uncheck Use compiler from module target JDK when possible
-   click apply and ok.
+5. Click apply and ok.
 
 * You can also adjust these settings from .idea/compiler.xml by modifying the <module> tag under <byteCodeTargetLevel>
 

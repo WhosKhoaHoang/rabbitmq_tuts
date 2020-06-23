@@ -1,3 +1,6 @@
+* Refer to https://www.rabbitmq.com/tutorials/tutorial-four-java.html 
+
+
 . This time, we want to focus on creating consumers that are only on the lookout for specific kinds of messages. In the publish/subscribe example, all consumers within an exchange would receive any messages sent to the exchange. For this example, the consumers will be more picky.
 
 
