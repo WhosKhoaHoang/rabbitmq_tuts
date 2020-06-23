@@ -15,7 +15,8 @@ public class NewTask {
     factory.setHost("localhost");
     try (Connection connection = factory.newConnection();
          Channel channel = connection.createChannel()) {
-      channel.queueDeclare(TASK_QUEUE_NAME, true, false, false, null);
+      boolean durable = true;
+      channel.queueDeclare(TASK_QUEUE_NAME, durable, false, false, null);
 
       // Allow arbitary messages to be sent from the command line
       String message = String.join(" ", args);

@@ -1,0 +1,15 @@
+*REFERENCE: https://www.rabbitmq.com/tutorials/tutorial-two-java.html
+
+. The main idea behind Work Queues (aka: Task Queues) is to avoid doing a resource-intensive task immediately and having to wait for it to complete. Instead we schedule the task to be done later. We encapsulate a task as a message and send it to a queue. A worker process running in the background will pop the tasks and eventually execute the job. When you run many workers the tasks will be shared between them.
+
+
+. This concept is especially useful in web applications where it's impossible to handle a complex task during a short HTTP request window.
+
+
+. Think of this task/worker queue setup as one where there's a queue that's constantly being filled up with Tasks by some process (the producer). This queue is being watched by a bunch of "worker" processes that strive to complete the tasks pushed onto the queue (the consumers).
+
+
+. One of the advantages of using a Task Queue is the ability to easily parallelize work. If we are building up a backlog of work, we can just add more workers and that way, scale easily.
+
+
+. Using message acknowledgments and prefetchCount you can set up a work queue. The durability options let the tasks survive even if RabbitMQ is restarted.
