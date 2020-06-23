@@ -16,3 +16,12 @@
 
 
 . Essentially, published log messages are going to be broadcast to all the receivers.
+
+
+. If no queue is bound to the "logs" exchange, then any messages sent by EmitLog here are lost. Since ReceiveLogs binds a queue to the "logs" exchange, you need to run ReceiveLogs first if you expect those messages to go anywhere.
+- Also, run multiple instances of ReceiveLogs to see how multiple queues get bound to the "logs" exchange and how they all receive messages from EmitLog.
+
+
+. Be sure to enable "Allow Parallel Runs" for ReceiveLogs' run configs so that you can run multiple instances of ReceiveLogs and get a better sense of how this pattern works.
+
+
