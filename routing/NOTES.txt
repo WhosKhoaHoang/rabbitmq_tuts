@@ -1,0 +1,9 @@
+. This time, we want to focus on creating consumers that are only on the lookout for specific kinds of messages. In the publish/subscribe example, all consumers within an exchange would receive any messages sent to the exchange. For this example, the consumers will be more picky.
+
+
+. The idea behind these picky queues is that they decide what they're interested in consuming through binding keys (or the routingKey parameter for a Channel object's queueBind() method)!
+- The meaning of a binding key depends on the exchange type. The fanout exchanges, which we used previously, simply ignored its value.
+
+
+. In this example, note how the consumer can bind multiple severities to a queue while a producer can only send a message to a single severity.
+
