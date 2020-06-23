@@ -20,3 +20,5 @@
 4. Uncheck Use compiler from module target JDK when possible
    click apply and ok.
 
+* You can also adjust these settings from .idea/compiler.xml by modifying the <module> tag under <byteCodeTargetLevel>
+
