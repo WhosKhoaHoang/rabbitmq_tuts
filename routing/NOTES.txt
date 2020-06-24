@@ -10,3 +10,10 @@
 
 . In this example, note how the consumer can bind multiple severities to a queue while a producer can only send a message to a single severity.
 
+
+. HOW TO DO QUICK TEST:
+- Specify the binding keys (e.g., info, warning, error) that ReceiveLogsDirect expects (in run configs --> program arguments)
+- Specify the binding key and message that EmitLogDirect will send (in run configs --> program arguments)
+- Run ReceivedLogsTopic
+- Run EmitLogTopic
+- A "Received" output will appear for ReceivedLogsTopic if a message was sent from EmitLogTopic with a matching binding key

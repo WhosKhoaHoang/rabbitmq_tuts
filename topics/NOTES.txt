@@ -8,7 +8,7 @@
 
 
 . HOW TO DO QUICK TEST:
-- Specify the binding keys that ReceivedLogsTopic expects (in run configs --> program arguments)
+- Specify the binding keys that ReceiveLogsTopic expects (in run configs --> program arguments)
 - Specify the binding keys that EmitLogTopic will send (in run configs --> program arguments)
 - Run ReceivedLogsTopic
 - Run EmitLogTopic
