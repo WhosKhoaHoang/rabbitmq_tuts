@@ -5,7 +5,7 @@ import com.rabbitmq.client.*;
 
 public class RPCServer {
 
-  private static final String RPC_QUEUE_NAME = "rpa_queue";
+  private static final String RPC_QUEUE_NAME = "rpc_queue";
 
 
   private static int fib(int n) {
