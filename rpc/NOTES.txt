@@ -1,0 +1,6 @@
+. RPC (remote procedure call) is a programming method where you make a function call to a function that is defined on a remote machine / in an environment different from the one that is making the function call
+
+
+. You might think: why not just define that function locally within the project that would call the remote function?
+- The software/hardware environment in which the remote function resides would be a hassle to set up locally (this might be a big reason in any case)
+- It could be a function (or more generally, procedure) written in a different language and best left off written in that language, perhaps due to that language having better features for achieving some sort of result. E.g., you have a program written in python that needs to achieve some goal that’s actually really hard to do in python, so you RPC some already implemented C++ function that resides on another machine to get what you want.
