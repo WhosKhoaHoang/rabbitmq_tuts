@@ -6,3 +6,10 @@
 
 . Topic exchange is powerful and can behave like other exchanges. When a queue is bound with "#" (hash) binding key - it will receive all the messages, regardless of the routing key - like in fanout exchange. When special characters, "*" (star) and "#" (hash), aren't used in bindings, the topic exchange will behave just like a direct one.
 
+
+. HOW TO DO QUICK TEST:
+- Specify the binding keys that ReceivedLogsTopic expects (in run configs --> program arguments)
+- Specify the binding keys that EmitLogTopic will send (in run configs --> program arguments)
+- Run ReceivedLogsTopic
+- Run EmitLogTopic
+- A "Received" output will appear for ReceivedLogsTopic if a message was sent from EmitLogTopic with a matching binding key
